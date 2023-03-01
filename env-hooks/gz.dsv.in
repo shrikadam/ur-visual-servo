@@ -1,0 +1,6 @@
+prepend-non-duplicate;GZ_SIM_RESOURCE_PATH;share/@PROJECT_NAME@/resource/models
+prepend-non-duplicate;GZ_SIM_RESOURCE_PATH;share/@PROJECT_NAME@/resource/worlds
+set-if-unset;MESA_GL_VERSION_OVERRIDE;3.3
+prepend-non-duplicate;SDF_PATH;share/@PROJECT_NAME@/resource/models
+prepend-non-duplicate;SDF_PATH;share/@PROJECT_NAME@/resource/worlds
+prepend-non-duplicate;GZ_SIM_SYSTEM_PLUGIN_PATH;plugins
