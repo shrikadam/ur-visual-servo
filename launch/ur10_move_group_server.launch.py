@@ -1,5 +1,5 @@
 """Launch move_group action server without controllers and trajectory execution
-# refenerce:
+# reference:
 # https://github.com/AndrejOrsula/panda_moveit2_config/blob/master/launch/move_group_action_server.launch.py
 """
 
@@ -11,7 +11,6 @@ from launch.actions import DeclareLaunchArgument
 from launch_ros.actions import Node
 from launch.substitutions import LaunchConfiguration
 from sdformat_tools.urdf_generator import UrdfGenerator
-
 
 def load_file(package_name, file_path):
     package_path = get_package_share_directory(package_name)

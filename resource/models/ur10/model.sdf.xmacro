@@ -12,8 +12,8 @@
         <!--plugins for ur-->
         <xmacro_block name="ur10_position_controller"/>
         <!--joint state publisher-->
-        <plugin filename="ignition-gazebo-joint-state-publisher-system" 
-                name="ignition::gazebo::systems::JointStatePublisher">
+        <plugin filename="gz-sim-joint-state-publisher-system" 
+                name="gz::sim::systems::JointStatePublisher">
             <joint_name>shoulder_pan_joint</joint_name>
             <joint_name>shoulder_lift_joint</joint_name>
             <joint_name>elbow_joint</joint_name>

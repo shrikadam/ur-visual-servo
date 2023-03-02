@@ -1,6 +1,8 @@
-"""Launch MoveIt2 move_group action server and the required bridges between Ignition and ROS 2"""
+"""Launch MoveIt2 move_group action server and the required bridges between Gazebo and ROS 2"""
 
 import os
+import sys
+sys.path.append("/home/shri/Projects/universal_robot_gz/src/ur_gz/launch")
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument
@@ -9,7 +11,6 @@ from launch.substitutions import LaunchConfiguration
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from sdformat_tools.urdf_generator import UrdfGenerator
-
 
 def generate_launch_description():
     pkg_ur_gz = get_package_share_directory('ur_gz')
